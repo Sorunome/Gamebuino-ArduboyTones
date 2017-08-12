@@ -293,6 +293,7 @@ public:
   static void nextTone();
 };
 
-#include "ArduboyTonesPitches.h"
+#include "Gamebuino-ArduboyTonesPitches.h"
 
 #endif
+
