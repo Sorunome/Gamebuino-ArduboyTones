@@ -77,7 +77,7 @@ public:
   void rewind() {
     // do nothing, this is a dummy
   }
-  void escapseChannel() {
+  void escapeChannel() {
     gb_channel = channel;
   }
 };
@@ -210,7 +210,7 @@ void ArduboyTones::nextTone()
   if (!gb_channel) {
     gb_handler = new GB_Sound_Handler();
     gb.sound.play(gb_handler, true);
-    gb_handler->escapseChannel();
+    gb_handler->escapeChannel();
   }
   
   if (!gb_channel) {
