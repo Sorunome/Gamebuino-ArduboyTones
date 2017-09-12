@@ -219,7 +219,7 @@ void ArduboyTones::nextTone()
     return;
   }
   
-  gb_channel->type = Gamebuino_Meta::Sound_Channel_Type::pattern;
+  gb_channel->type = Gamebuino_Meta::Sound_Channel_Type::square;
   gb_channel->total = 22050 / freq;
   gb_channel->index = 0;
   if (toneSilent) {
