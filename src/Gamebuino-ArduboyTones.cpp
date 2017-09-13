@@ -227,7 +227,7 @@ void ArduboyTones::nextTone()
   } else if (toneHighVol) {
     gb_channel->amplitude = 0x30;
   } else {
-    gb_channel->amplitude = 12;
+    gb_channel->amplitude = 0x20; // 12
   }
   
   gb_channel->use = true;
